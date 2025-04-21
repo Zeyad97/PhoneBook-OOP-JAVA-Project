@@ -1,49 +1,42 @@
-Phonebook Management System
+# ☎️ Phonebook Management System
 
-A simple Phonebook Management System developed in Java using Object-Oriented Programming (OOP) principles. The system allows users to manage their contacts by adding, updating, deleting, searching, and sorting them. It supports three types of contacts: basic Contact, FriendContact (with birthday), and WorkContact (with job title).
+A simple yet powerful **Phonebook Management System** developed in **Java** using **Object-Oriented Programming (OOP)** principles.  
+The system supports multiple contact types with additional attributes and provides full contact management features.
 
-Features
-Add, update, delete, and view contacts.
+Originally developed as a **university project**.
 
-Search contacts by name, phone number, email, or address.
+---
 
-Sort contacts alphabetically by name.
+## 📌 Description
 
-Support for FriendContact and WorkContact types with additional attributes like birthday and job title.
+This application allows users to add, update, delete, search, and sort contacts.  
+Supports 3 contact types:
+- `Contact`: Basic contact with name, phone, email, and address.
+- `FriendContact`: Inherits from Contact and adds a birthday.
+- `WorkContact`: Inherits from Contact and adds a job title.
 
-Technologies Used
-Java: The core programming language.
+---
 
-Object-Oriented Programming (OOP): Classes, Inheritance, Polymorphism, and Encapsulation.
+## ✅ Features
 
-How to Run the Project
-Clone or download this repository.
+- ➕ Add, update, delete, and view contacts
+- 🔍 Search by name, phone, email, or address
+- 🔤 Sort contacts alphabetically by name
+- 🎂 Support for **FriendContact** with birthday
+- 💼 Support for **WorkContact** with job title
 
-Open the project in an IDE like IntelliJ IDEA or Eclipse.
+---
 
-Run the Main.java file to start the phonebook application.
+## 🛠️ Technologies Used
 
-Use the menu to add, view, update, delete, or search contacts.
+| Category           | Technology                      |
+|--------------------|----------------------------------|
+| Language           | Java                            |
+| Programming Style  | Object-Oriented Programming (OOP) |
+| Concepts Used      | Classes, Inheritance, Polymorphism, Encapsulation |
 
-File Structure
-bash
-نسخ
-تحرير
-Phonebook/
-├── Contact.java          # Class for basic contact.
-├── FriendContact.java    # Class for friend contact (extends Contact).
-├── WorkContact.java      # Class for work contact (extends Contact).
-├── ContactManager.java   # Class to manage the list of contacts.
-└── Main.java             # Main class to run the application.
-How to Contribute
-Fork the repository.
+---
 
-Create a new branch (git checkout -b feature/your-feature).
+## 👨‍💻 Author
 
-Make your changes.
-
-Commit your changes (git commit -am 'Add new feature').
-
-Push to the branch (git push origin feature/your-feature).
-
-Create a pull request.
+Created by Zeyad as part of the *Object Oriented Programming* course at AAST.
