@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">//OOP 12TH PROJECTS ---- GROUP 1 (ZEYAD-ALIYAH-MOHANED-FARAH-AHMED-SHAWKY)</span>
+
+<span class="s2">import </span><span class="s1">java</span><span class="s3">.</span><span class="s1">util</span><span class="s3">.</span><span class="s1">ArrayList</span><span class="s3">;</span>
+<span class="s2">import </span><span class="s1">java</span><span class="s3">.</span><span class="s1">util</span><span class="s3">.</span><span class="s1">Scanner</span><span class="s3">;</span>
+
+<span class="s2">class </span><span class="s1">Contact </span><span class="s3">{</span>
+    <span class="s2">private </span><span class="s1">String name</span><span class="s3">;</span>
+    <span class="s2">private int </span><span class="s1">phoneNumber</span><span class="s3">;</span>
+    <span class="s2">private </span><span class="s1">String email</span><span class="s3">;</span>
+    <span class="s2">private </span><span class="s1">String address</span><span class="s3">;</span>
+
+    <span class="s2">public </span><span class="s1">Contact</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">, </span><span class="s2">int </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">String email</span><span class="s3">, </span><span class="s1">String address</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">name </span><span class="s3">= </span><span class="s1">name</span><span class="s3">;</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">phoneNumber </span><span class="s3">= </span><span class="s1">phoneNumber</span><span class="s3">;</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">email </span><span class="s3">= </span><span class="s1">email</span><span class="s3">;</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">address </span><span class="s3">= </span><span class="s1">address</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public </span><span class="s1">String getName</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">name</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public int </span><span class="s1">getPhoneNumber</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">phoneNumber</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public </span><span class="s1">String getEmail</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">email</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public </span><span class="s1">String getAddress</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">address</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setName</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">name </span><span class="s3">= </span><span class="s1">name</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setPhoneNumber</span><span class="s3">(</span><span class="s2">int </span><span class="s1">phoneNumber</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">phoneNumber </span><span class="s3">= </span><span class="s1">phoneNumber</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setEmail</span><span class="s3">(</span><span class="s1">String email</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">email </span><span class="s3">= </span><span class="s1">email</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setAddress</span><span class="s3">(</span><span class="s1">String address</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">address </span><span class="s3">= </span><span class="s1">address</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s2">public </span><span class="s1">String toString</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">name </span><span class="s3">+ </span><span class="s4">&quot; - &quot; </span><span class="s3">+ </span><span class="s1">phoneNumber </span><span class="s3">+ </span><span class="s4">&quot; - &quot; </span><span class="s3">+ </span><span class="s1">email </span><span class="s3">+ </span><span class="s4">&quot; - &quot; </span><span class="s3">+ </span><span class="s1">address</span><span class="s3">;</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s2">class </span><span class="s1">FriendContact </span><span class="s2">extends </span><span class="s1">Contact </span><span class="s3">{</span>
+    <span class="s2">private </span><span class="s1">String birthday</span><span class="s3">;</span>
+
+    <span class="s2">public </span><span class="s1">FriendContact</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">, </span><span class="s2">int </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">String email</span><span class="s3">, </span><span class="s1">String address</span><span class="s3">, </span><span class="s1">String birthday</span><span class="s3">) {</span>
+        <span class="s2">super</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">);</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">birthday </span><span class="s3">= </span><span class="s1">birthday</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public </span><span class="s1">String getBirthday</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">birthday</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setBirthday</span><span class="s3">(</span><span class="s1">String birthday</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">birthday </span><span class="s3">= </span><span class="s1">birthday</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s2">public </span><span class="s1">String toString</span><span class="s3">() {</span>
+        <span class="s2">return super</span><span class="s3">.</span><span class="s1">toString</span><span class="s3">() + </span><span class="s4">&quot; - Birthday: &quot; </span><span class="s3">+ </span><span class="s1">birthday</span><span class="s3">;</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s2">class </span><span class="s1">WorkContact </span><span class="s2">extends </span><span class="s1">Contact </span><span class="s3">{</span>
+    <span class="s2">private </span><span class="s1">String jobTitle</span><span class="s3">;</span>
+
+    <span class="s2">public </span><span class="s1">WorkContact</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">, </span><span class="s2">int </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">String email</span><span class="s3">, </span><span class="s1">String address</span><span class="s3">, </span><span class="s1">String jobTitle</span><span class="s3">) {</span>
+        <span class="s2">super</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">);</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">jobTitle </span><span class="s3">= </span><span class="s1">jobTitle</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public </span><span class="s1">String getJobTitle</span><span class="s3">() {</span>
+        <span class="s2">return </span><span class="s1">jobTitle</span><span class="s3">;</span>
+    <span class="s3">}</span>
+    <span class="s2">public void </span><span class="s1">setJobTitle</span><span class="s3">(</span><span class="s1">String jobTitle</span><span class="s3">) {</span>
+        <span class="s2">this</span><span class="s3">.</span><span class="s1">jobTitle </span><span class="s3">= </span><span class="s1">jobTitle</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s2">public </span><span class="s1">String toString</span><span class="s3">() {</span>
+        <span class="s2">return super</span><span class="s3">.</span><span class="s1">toString</span><span class="s3">() + </span><span class="s4">&quot; - Job Title: &quot; </span><span class="s3">+ </span><span class="s1">jobTitle</span><span class="s3">;</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s2">class </span><span class="s1">ContactManager </span><span class="s3">{</span>
+    <span class="s2">private </span><span class="s1">ArrayList</span><span class="s3">&lt;</span><span class="s1">Contact</span><span class="s3">&gt; </span><span class="s1">contacts</span><span class="s3">;</span>
+
+    <span class="s2">public </span><span class="s1">ContactManager</span><span class="s3">() {</span>
+        <span class="s1">contacts </span><span class="s3">= </span><span class="s2">new </span><span class="s1">ArrayList</span><span class="s3">&lt;&gt;();</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">addContact</span><span class="s3">(</span><span class="s1">Contact contact</span><span class="s3">) {</span>
+        <span class="s1">contacts</span><span class="s3">.</span><span class="s1">add</span><span class="s3">(</span><span class="s1">contact</span><span class="s3">);</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">viewContacts</span><span class="s3">() {</span>
+        <span class="s2">for </span><span class="s3">(</span><span class="s1">Contact contact </span><span class="s3">: </span><span class="s1">contacts</span><span class="s3">) {</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s1">contact</span><span class="s3">);</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">updateContact</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">, </span><span class="s2">int </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">String email</span><span class="s3">, </span><span class="s1">String address</span><span class="s3">) {</span>
+        <span class="s2">for </span><span class="s3">(</span><span class="s1">Contact contact </span><span class="s3">: </span><span class="s1">contacts</span><span class="s3">) {</span>
+            <span class="s2">if </span><span class="s3">(</span><span class="s1">contact</span><span class="s3">.</span><span class="s1">getName</span><span class="s3">().</span><span class="s1">equalsIgnoreCase</span><span class="s3">(</span><span class="s1">name</span><span class="s3">)) {</span>
+                <span class="s1">contact</span><span class="s3">.</span><span class="s1">setPhoneNumber</span><span class="s3">(</span><span class="s1">phoneNumber</span><span class="s3">);</span>
+                <span class="s1">contact</span><span class="s3">.</span><span class="s1">setEmail</span><span class="s3">(</span><span class="s1">email</span><span class="s3">);</span>
+                <span class="s1">contact</span><span class="s3">.</span><span class="s1">setAddress</span><span class="s3">(</span><span class="s1">address</span><span class="s3">);</span>
+                <span class="s2">break</span><span class="s3">;</span>
+            <span class="s3">}</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">deleteContact</span><span class="s3">(</span><span class="s1">String name</span><span class="s3">) {</span>
+        <span class="s1">contacts</span><span class="s3">.</span><span class="s1">removeIf</span><span class="s3">(</span><span class="s1">contact -&gt; contact</span><span class="s3">.</span><span class="s1">getName</span><span class="s3">().</span><span class="s1">equalsIgnoreCase</span><span class="s3">(</span><span class="s1">name</span><span class="s3">));</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">searchContact</span><span class="s3">(</span><span class="s1">String keyword</span><span class="s3">) {</span>
+        <span class="s2">for </span><span class="s3">(</span><span class="s1">Contact contact </span><span class="s3">: </span><span class="s1">contacts</span><span class="s3">) {</span>
+            <span class="s2">if </span><span class="s3">(</span><span class="s1">contact</span><span class="s3">.</span><span class="s1">getName</span><span class="s3">().</span><span class="s1">contains</span><span class="s3">(</span><span class="s1">keyword</span><span class="s3">) ||</span>
+                    <span class="s1">String</span><span class="s3">.</span><span class="s1">valueOf</span><span class="s3">(</span><span class="s1">contact</span><span class="s3">.</span><span class="s1">getPhoneNumber</span><span class="s3">()).</span><span class="s1">contains</span><span class="s3">(</span><span class="s1">keyword</span><span class="s3">) ||</span>
+                    <span class="s1">contact</span><span class="s3">.</span><span class="s1">getEmail</span><span class="s3">().</span><span class="s1">contains</span><span class="s3">(</span><span class="s1">keyword</span><span class="s3">) ||</span>
+                    <span class="s1">contact</span><span class="s3">.</span><span class="s1">getAddress</span><span class="s3">().</span><span class="s1">contains</span><span class="s3">(</span><span class="s1">keyword</span><span class="s3">)) {</span>
+                <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s1">contact</span><span class="s3">);</span>
+            <span class="s3">}</span>
+        <span class="s3">}</span>
+    <span class="s3">}</span>
+
+    <span class="s2">public void </span><span class="s1">sortContacts</span><span class="s3">() {</span>
+        <span class="s1">contacts</span><span class="s3">.</span><span class="s1">sort</span><span class="s3">((</span><span class="s1">c1</span><span class="s3">, </span><span class="s1">c2</span><span class="s3">) </span><span class="s1">-&gt; c1</span><span class="s3">.</span><span class="s1">getName</span><span class="s3">().</span><span class="s1">compareToIgnoreCase</span><span class="s3">(</span><span class="s1">c2</span><span class="s3">.</span><span class="s1">getName</span><span class="s3">()));</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;Contacts sorted by name.&quot;</span><span class="s3">);</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s2">public class </span><span class="s1">Main </span><span class="s3">{</span>
+    <span class="s2">public static void </span><span class="s1">main</span><span class="s3">(</span><span class="s1">String</span><span class="s3">[] </span><span class="s1">args</span><span class="s3">) {</span>
+        <span class="s1">ContactManager contactManager </span><span class="s3">= </span><span class="s2">new </span><span class="s1">ContactManager</span><span class="s3">();</span>
+        <span class="s1">Scanner scanner </span><span class="s3">= </span><span class="s2">new </span><span class="s1">Scanner</span><span class="s3">(</span><span class="s1">System</span><span class="s3">.</span><span class="s1">in</span><span class="s3">);</span>
+        <span class="s2">int </span><span class="s1">choice</span><span class="s3">;</span>
+        <span class="s2">do </span><span class="s3">{</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;1. Add Contact&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;2. View Contacts&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;3. Update Contact&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;4. Delete Contact&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;5. Search Contact&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;6. Sort Contacts&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;7. Exit&quot;</span><span class="s3">);</span>
+            <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter your choice: &quot;</span><span class="s3">);</span>
+            <span class="s1">choice </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextInt</span><span class="s3">();</span>
+            <span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+
+            <span class="s2">switch </span><span class="s3">(</span><span class="s1">choice</span><span class="s3">) {</span>
+                <span class="s2">case </span><span class="s5">1</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter type (1: Contact, 2: Friend, 3: Work): &quot;</span><span class="s3">);</span>
+                    <span class="s2">int </span><span class="s1">type </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextInt</span><span class="s3">();</span>
+                    <span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter name: &quot;</span><span class="s3">);</span>
+                    <span class="s1">String name </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter phone number: &quot;</span><span class="s3">);</span>
+                    <span class="s2">int </span><span class="s1">phoneNumber </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextInt</span><span class="s3">();</span>
+                    <span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter email: &quot;</span><span class="s3">);</span>
+                    <span class="s1">String email </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter address: &quot;</span><span class="s3">);</span>
+                    <span class="s1">String address </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s2">if </span><span class="s3">(</span><span class="s1">type </span><span class="s3">== </span><span class="s5">1</span><span class="s3">) {</span>
+                        <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">addContact</span><span class="s3">(</span><span class="s2">new </span><span class="s1">Contact</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">));</span>
+                    <span class="s3">} </span><span class="s2">else if </span><span class="s3">(</span><span class="s1">type </span><span class="s3">== </span><span class="s5">2</span><span class="s3">) {</span>
+                        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter birthday: &quot;</span><span class="s3">);</span>
+                        <span class="s1">String birthday </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                        <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">addContact</span><span class="s3">(</span><span class="s2">new </span><span class="s1">FriendContact</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">, </span><span class="s1">birthday</span><span class="s3">));</span>
+                    <span class="s3">} </span><span class="s2">else if </span><span class="s3">(</span><span class="s1">type </span><span class="s3">== </span><span class="s5">3</span><span class="s3">) {</span>
+                        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter job title: &quot;</span><span class="s3">);</span>
+                        <span class="s1">String jobTitle </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                        <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">addContact</span><span class="s3">(</span><span class="s2">new </span><span class="s1">WorkContact</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">, </span><span class="s1">jobTitle</span><span class="s3">));</span>
+                    <span class="s3">}</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">2</span><span class="s3">:</span>
+                    <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">viewContacts</span><span class="s3">();</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">3</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter name of contact to update: &quot;</span><span class="s3">);</span>
+                    <span class="s1">name </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter new phone number: &quot;</span><span class="s3">);</span>
+                    <span class="s1">phoneNumber </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextInt</span><span class="s3">();</span>
+                    <span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter new email: &quot;</span><span class="s3">);</span>
+                    <span class="s1">email </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter new address: &quot;</span><span class="s3">);</span>
+                    <span class="s1">address </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">updateContact</span><span class="s3">(</span><span class="s1">name</span><span class="s3">, </span><span class="s1">phoneNumber</span><span class="s3">, </span><span class="s1">email</span><span class="s3">, </span><span class="s1">address</span><span class="s3">);</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">4</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter name of contact to delete: &quot;</span><span class="s3">);</span>
+                    <span class="s1">name </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">deleteContact</span><span class="s3">(</span><span class="s1">name</span><span class="s3">);</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">5</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter search keyword: &quot;</span><span class="s3">);</span>
+                    <span class="s1">String keyword </span><span class="s3">= </span><span class="s1">scanner</span><span class="s3">.</span><span class="s1">nextLine</span><span class="s3">();</span>
+                    <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">searchContact</span><span class="s3">(</span><span class="s1">keyword</span><span class="s3">);</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">6</span><span class="s3">:</span>
+                    <span class="s1">contactManager</span><span class="s3">.</span><span class="s1">sortContacts</span><span class="s3">();</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">case </span><span class="s5">7</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;Exiting...&quot;</span><span class="s3">);</span>
+                    <span class="s2">break</span><span class="s3">;</span>
+                <span class="s2">default</span><span class="s3">:</span>
+                    <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;Invalid choice. Please try again.&quot;</span><span class="s3">);</span>
+            <span class="s3">}</span>
+        <span class="s3">} </span><span class="s2">while </span><span class="s3">(</span><span class="s1">choice </span><span class="s3">!= </span><span class="s5">7</span><span class="s3">);</span>
+
+        <span class="s1">scanner</span><span class="s3">.</span><span class="s1">close</span><span class="s3">();</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>
